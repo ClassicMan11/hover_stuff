@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+:root {
+    --bg_1: #F13030;
+    --bg_2: #F6E8EA;
+    --hover-bg: #cdcdcd;
+    --font-family: 'Calistoga', cursive;;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+/* The main/first page style */
+#main_page {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+/* The second page style */
+#second_page {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+/* The main page 1st container style */
+#main_page .container_1 {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+/* The main page 2nd container style */
+#main_page .container_2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+}
+/* The rolling gif style */
+.rollin_by {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    right: -150px;
+    width: 150px;
+    animation: roll 50s infinite;
+}
+/* The rolling gif animation */
+@keyframes roll {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 110%;
+    }
+}
+
+/* Second Page Container Styles */
+#second_page .container_1 {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+#second_page .container_2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+}
+/* The scroll down gif style */
+#scroll_down {
+    position: fixed;
+    width: 60px;
+    bottom: 15px;
+    right: 15px;
+}
+/* Main page container styling */
+#main_page .container_1 .left_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bg_1);
+}
+#main_page .container_1 .right_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bg-2);
+}
+#main_page .container_2 .left_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bg-2);
+}
+#main_page .container_2 .right_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bg_1);
+}
+/* Second Page 1st container left side*/
+#second_page .container_1 .left_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bg_1);
+}
+/* Second Page 1st container right side*/
+#second_page .container_1 .right_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bg-2);
+}
+/* Second Page 2nd container left side*/
+#second_page .container_2 .left_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bg-2);
+}
+/* Second Page 2nd container right side*/
+#second_page .container_2 .right_side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bg_1);
+}
+/* Btn container for the whole page */
+.btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 33%;
+    height: 210px;
+}
+/* Main page 1st container left side button styling */
+#main_page .container_1 .left_side .btn_container a button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    transition: all 0.5s ease-in-out;
+}
+#main_page .container_1 .left_side .btn_container a button:hover {
+    background-color: var(--hover-bg);
+}
+#main_page .container_1 .left_side .btn_container img{
+    position: absolute;
+    top: -15px;
+    opacity: 0;
+    width: 110px;
+    transition: all 0.2s ease-in;
+}
+#main_page .container_1 .left_side .btn_container a:hover + img {
+    opacity: 1;
+}
+/* Main page 1st container right side button styling */
+#main_page .container_1 .right_side .btn_container a button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    transition: all 0.5s ease-in-out;
+}
+#main_page .container_1 .right_side .btn_container a button:hover {
+    background-color: var(--hover-bg);
+}
+#main_page .container_1 .right_side .btn_container img{
+    position: absolute;
+    top: -9px;
+    opacity: 0;
+    width: 110px;
+    transition: all 0.2s ease-in;
+}
+#main_page .container_1 .right_side .btn_container a:hover + img {
+    opacity: 1;
+}
+/* Main page 2nd container left side button styling */
+#main_page .container_2 .left_side .btn_container a button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    transition: all 0.5s ease-in-out;
+}
+#main_page .container_2 .left_side .btn_container a button:hover {
+    background-color: var(--hover-bg);
+}
+#main_page .container_2 .left_side .btn_container img{
+    position: absolute;
+    top: -21px;
+    opacity: 0;
+    width: 110px;
+    transition: all 0.2s ease-in;
+}
+#main_page .container_2 .left_side .btn_container a:hover + img {
+    opacity: 1;
+}
+/* Main page 2nd container right side button styling */
+#main_page .container_2 .right_side .btn_container a button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    transition: all 0.5s ease-in-out;
+}
+#main_page .container_2 .right_side .btn_container a button:hover {
+    background-color: var(--hover-bg);
+}
+#main_page .container_2 .right_side .btn_container img{
+    position: absolute;
+    top: -19px;
+    opacity: 0;
+    width: 110px;
+    transition: all 0.2s ease-in;
+}
+#main_page .container_2 .right_side .btn_container a:hover + img {
+    opacity: 1;
+}
+/* second page 1st container left side button styling */
+#second_page .container_1 .left_side .btn_container a button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    transition: all 0.5s ease-in-out;
+}
+#second_page .container_1 .left_side .btn_container a button:hover {
+    background-color: var(--hover-bg);
+}
+#second_page .container_1 .left_side .btn_container img{
+    position: absolute;
+    top: 7.6px;
+    left: 10px;
+    width: 100px;
+}
+/* second page 1st container right side button styling */
+#second_page .container_1 .right_side .btn_container a button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    transition: all 0.5s ease-in-out;
+}
+#second_page .container_1 .right_side .btn_container a button:hover {
+    background-color: var(--hover-bg);
+}
+#second_page .container_1 .right_side .btn_container img{
+    position: absolute;
+    top: 28px;
+    opacity: 1;
+    width: 90px;
+    transition: all 0.2s ease-in;
+}
+#second_page .container_1 .right_side .btn_container a:hover + img {
+    opacity: 0;
+}
+/* second page 2nd container left side button styling */
+#second_page .container_2 .left_side .btn_container a button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    transition: all 0.5s ease-in-out;
+}
+#second_page .container_2 .left_side .btn_container a button:hover {
+    background-color: var(--hover-bg);
+}
+#second_page .container_2 .left_side .btn_container img{
+    position: absolute;
+    top: 90px;
+    right: -6px;
+    width: 90px;
+}
+/* second page 2nd container right side button styling */
+#second_page .container_2 .right_side .btn_container a button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--font-family);
+    transition: all 0.5s ease-in-out;
+}
+#second_page .container_2 .right_side .btn_container a button:hover {
+    background-color: var(--hover-bg);
+}
+#second_page .container_2 .right_side .btn_container img{
+    position: absolute;
+    top: 42px;
+    left: 70px;
+    transform: rotateZ(-15deg);
+    width: 90px;
+}
+
+
+
+
+/* General Button Style */
+button {
+    cursor: pointer;
+}
+/* To remove the scroll-bar */
+::-webkit-scrollbar {
+    display: none;
+}
