@@ -17,7 +17,6 @@ body{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    overflow-y: hidden;
     min-height: 100vh;
 }
 /* The main/first page style */
