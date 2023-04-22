@@ -26,13 +26,6 @@ body{
     width: 100%;
     height: 100vh;
 }
-/* The second page style */
-#second_page {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
 /* The main page 1st container style */
 #main_page .container_1 {
     position: absolute;
@@ -63,19 +56,6 @@ body{
     100% {
         left: 110%;
     }
-}
-
-/* Second Page Container Styles */
-#second_page .container_1 {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-}
-#second_page .container_2 {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 50%;
 }
 /* The scroll down gif style */
 #scroll_down {
@@ -119,54 +99,6 @@ body{
     background-color: var(--bg-2);
 }
 #main_page .container_2 .right_side{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-color: var(--bg_1);
-}
-/* Second Page 1st container left side*/
-#second_page .container_1 .left_side{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: var(--bg_1);
-}
-/* Second Page 1st container right side*/
-#second_page .container_1 .right_side{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-color: var(--bg-2);
-}
-/* Second Page 2nd container left side*/
-#second_page .container_2 .left_side{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: var(--bg-2);
-}
-/* Second Page 2nd container right side*/
-#second_page .container_2 .right_side{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,132 +218,6 @@ body{
 #main_page .container_2 .right_side .btn_container a:hover + img {
     opacity: 1;
 }
-/* second page 1st container left side button styling */
-#second_page .container_1 .left_side .btn_container a button {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: var(--font-family);
-    transition: all 0.5s ease-in-out;
-}
-#second_page .container_1 .left_side .btn_container a button:hover {
-    background-color: var(--hover-bg);
-}
-#second_page .container_1 .left_side .btn_container img{
-    position: absolute;
-    top: 7.6px;
-    left: 10px;
-    width: 100px;
-}
-/* second page 1st container right side button styling */
-#second_page .container_1 .right_side .btn_container a button {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: var(--font-family);
-    transition: all 0.5s ease-in-out;
-}
-#second_page .container_1 .right_side .btn_container a button:hover {
-    background-color: var(--hover-bg);
-}
-#second_page .container_1 .right_side .btn_container img{
-    position: absolute;
-    top: 28px;
-    opacity: 1;
-    width: 90px;
-    transition: all 0.2s ease-in;
-}
-#second_page .container_1 .right_side .btn_container a:hover + img {
-    opacity: 0;
-}
-/* second page 2nd container left side button styling */
-#second_page .container_2 .left_side .btn_container a button {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: var(--font-family);
-    transition: all 0.5s ease-in-out;
-}
-#second_page .container_2 .left_side .btn_container a button:hover {
-    background-color: var(--hover-bg);
-}
-#second_page .container_2 .left_side .btn_container img{
-    position: absolute;
-    top: 90px;
-    right: -6px;
-    width: 90px;
-}
-/* second page 2nd container right side button styling */
-#second_page .container_2 .right_side .btn_container a button {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: var(--font-family);
-    transition: all 0.5s ease-in-out;
-}
-#second_page .container_2 .right_side .btn_container a button:hover {
-    background-color: var(--hover-bg);
-}
-#second_page .container_2 .right_side .btn_container img{
-    position: absolute;
-    top: 42px;
-    left: 70px;
-    transform: rotateZ(-15deg);
-    width: 90px;
-}
-@media screen and (max-width: 600px) {
-    body{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        overflow-x: hidden;
-        min-height: 100vh;
-    }
-    #second_page .btn_container {
-        width: 100%;
-    }
-    #second_page .container_1 .left_side .btn_container img{
-        position: absolute;
-        top: 7.6px;
-        left: -14px;
-        width: 100px;
-    }
-    #second_page .container_2 .left_side .btn_container img{
-        position: absolute;
-        top: 90px;
-        right: -35px;
-        width: 90px;
-    }
-    #second_page .container_2 .right_side .btn_container img{
-        position: absolute;
-        top: 42px;
-        left: 50px;
-        transform: rotateZ(-15deg);
-        width: 90px;
-    }
-}
-@media screen and (min-width: 1024px) {
-    #second_page .btn_container {
-        width: 50%;
-    }
-}
-
 
 /* General Button Style */
 button {
