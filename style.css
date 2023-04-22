@@ -381,7 +381,7 @@ body{
         display: flex;
         flex-direction: column;
         width: 100%;
-        overflow-y: hidden;
+        overflow-x: hidden;
         min-height: 100vh;
     }
     #second_page .btn_container {
