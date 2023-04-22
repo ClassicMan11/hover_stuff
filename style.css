@@ -16,7 +16,8 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
+    overflow-y: hidden;
     min-height: 100vh;
 }
 /* The main/first page style */
@@ -375,8 +376,42 @@ body{
     transform: rotateZ(-15deg);
     width: 90px;
 }
-
-
+@media screen and (max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-y: hidden;
+        min-height: 100vh;
+    }
+    #second_page .btn_container {
+        width: 100%;
+    }
+    #second_page .container_1 .left_side .btn_container img{
+        position: absolute;
+        top: 7.6px;
+        left: -14px;
+        width: 100px;
+    }
+    #second_page .container_2 .left_side .btn_container img{
+        position: absolute;
+        top: 90px;
+        right: -35px;
+        width: 90px;
+    }
+    #second_page .container_2 .right_side .btn_container img{
+        position: absolute;
+        top: 42px;
+        left: 50px;
+        transform: rotateZ(-15deg);
+        width: 90px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #second_page .btn_container {
+        width: 50%;
+    }
+}
 
 
 /* General Button Style */
